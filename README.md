@@ -1,4 +1,5 @@
 HOW TO INSTALL MAILLOG
+prerequisites : LAMP server with php7.4+ mysql mariadb10+ or mysql 5.7+
 
 1. copy this folder into you web hosting and modify the mysql_credentials.php file inside lpslt/php/ for the needs of your mysql installation
 
