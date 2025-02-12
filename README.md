@@ -14,6 +14,10 @@ lpslt/upload
 
 lpslt/media/logo.png
 
+this can be done for example by the following commandline on a linux shell:
+
+chown www-data:www-data lpslt/load lpslt/temp lpslt/upload lpslt/media/logo.png -R && chmod 0664 lpslt/load lpslt/temp lpslt/upload lpslt/media/logo.png -R 
+
 // the three last are for the logo customization, and are not required if you don’t intend to put your logo to the app.
 
 4. import the sql dump file, AFTER having modified the super admin password BEWARE OR ITS A SECURITY ISSUE IF YOU DON’T MODIFY IT.
