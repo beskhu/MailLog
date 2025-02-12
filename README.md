@@ -16,7 +16,7 @@ lpslt/media/logo.png
 
 this can be done for example by the following commandline on a linux shell:
 
-chown www-data:www-data lpslt/load lpslt/temp lpslt/upload lpslt/media/logo.png -R && chmod 0664 lpslt/load lpslt/temp lpslt/upload lpslt/media/logo.png -R 
+chown www-data:www-data lpslt/load lpslt/temp lpslt/upload lpslt/media/logo.png -R && chmod 0775 lpslt/load lpslt/temp lpslt/upload lpslt/media/logo.png -R 
 
 // the three last are for the logo customization, and are not required if you don’t intend to put your logo to the app.
 
