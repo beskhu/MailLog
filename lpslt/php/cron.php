@@ -15,7 +15,7 @@ include_once(__DIR__.'/utils.php');
 include_once(__DIR__.'/locales.php');
 $mysql=new mysqlUtils();
 function prepareForRegex($str) {
-	$str=preg_replace_callback('/[\^\$\{\}\[\]\.\?\+\*\/\|\\\]/', function($m) { return "\\".$m[0]; }, $str);
+	$str=preg_replace_callback('/[\-\^\$\(\)\{\}\[\]\.\?\+\*\/\|\\\]/', function($m) { return "\\".$m[0]; }, $str);
 	$str=preg_replace('/\h+/', "(?:\\h|\\xC2\\xA0|\\v|&nbsp;|<br ?\/?>)+", $str);
 	return $str;
 }

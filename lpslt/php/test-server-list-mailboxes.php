@@ -39,7 +39,7 @@ if (isset($_SESSION['auth'], $_POST['encrypted']) && $_SESSION['auth']) {
 							$mailboxes[$i]=$utf8;
 						}
 						if ($server->setMailBox(preg_replace('/^\{.+\}(.+)/', "$1", $mailboxes[$i]))) {
-							if (strlen($imapSeparator)===0 && preg_match("/^.*\}(?:[^\/\.]+)([\/\.]{1}).+$/", $mailboxes[$i])) {
+							if ($imapSeparator==="guess" && preg_match("/^.*\}(?:[^\/\.]+)([\/\.]{1}).+$/", $mailboxes[$i])) {
 								$imapSeparator=preg_replace("/^.*\}(?:[^\/\.]+)([\/\.]{1}).+$/", "$1", $mailboxes[$i]);
 							}
 							continue;
