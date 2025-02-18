@@ -428,7 +428,8 @@ $keyAndIv=getDatabaseAESkeyAndIv();
 					<div class="container">
 						<div class="textA basic_full_width_container">
 							'.$_SESSION['locales']["cronSettings"][$_SESSION['current-language']].'<br /><br />
-							'.$_SESSION['locales']["forCrontabs"][$_SESSION['current-language']]." 0 */1 * * * ".$_SESSION['locales']["pathOfThisWebService"][$_SESSION['current-language']].'php/cron.php token=<span class="token">'.$rToken["token"][0].'</span><br /><br />
+							'.$_SESSION['locales']["forCrontabs"][$_SESSION['current-language']].' <span style="display:inline-block; text-align:left; vertical-align:middle;">0 * * * * '.$_SESSION['locales']["pathOfPhp"][$_SESSION['current-language']]." -d safe_mode=0 ".$_SESSION['locales']["pathOfThisWebService"][$_SESSION['current-language']].'php/cron.php token=<span class="token">'.$rToken["token"][0].'</span><br />
+							'.'0 * * * * '.$_SESSION['locales']["pathOfPhp"][$_SESSION['current-language']]." -d safe_mode=0 ".$_SESSION['locales']["pathOfThisWebService"][$_SESSION['current-language']].'php/cron-cleaning.php token=<span class="token">'.$rToken["token"][0].'</span></span><br /><br /><br />
 							'.$_SESSION['locales']["forCurlCallings"][$_SESSION['current-language']]." curl '".$_SESSION['locales']["localUrlOfWebService"][$_SESSION['current-language']].'php/cron.php?token=<span class="token">'.$rToken["token"][0]."</span>'".'<br /><br />
 							<button class="textB button" onclick="admin.regenerateCronToken();">'.$_SESSION['locales']["regenerateToken"][$_SESSION['current-language']].'</button>
 						</div>

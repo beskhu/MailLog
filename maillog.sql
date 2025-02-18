@@ -593,7 +593,8 @@ VALUES
 	(715,'Let status green if not identified : ','Laisser le statut vert si non identifié : ','letStatusGreenIfNotIdentified'),
 	(716,'yes','oui','yes'),
 	(717,'no','non','no'),
-	(718,'Are you sure you want to delete this service ?','Êtes-vous certain(e) de vouloir effacer ce service ?','areYouSureYouWantToDeleteThisService');
+	(718,'Are you sure you want to delete this service ?','Êtes-vous certain(e) de vouloir effacer ce service ?','areYouSureYouWantToDeleteThisService'),
+	(719,'the_path_of_your_php_executable', 'le_chemin_de_l_executable_php', 'pathOfPhp');
 
 /*!40000 ALTER TABLE `locales` ENABLE KEYS */;
 UNLOCK TABLES;
